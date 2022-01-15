@@ -1,11 +1,11 @@
 # NAME: Microsoft
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2021-12-16 17:32:38
+# UPDATED: 2021-12-16 17:32:49
 # PROCESS-NAME: 2
 # DOMAIN-SUFFIX: 417
-# USER-AGENT: 3
-# TOTAL: 422
+# TOTAL: 419
+
 DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,a-msedge.net
 DOMAIN-SUFFIX,a1158.g.akamai.net
@@ -423,8 +423,5 @@ DOMAIN-SUFFIX,xboxstudios.com
 DOMAIN-SUFFIX,xbx.lv
 DOMAIN-SUFFIX,yammer.com
 DOMAIN-SUFFIX,yammerusercontent.com
-USER-AGENT,Microsoft*
-USER-AGENT,OneDrive*
-USER-AGENT,OneDriveiOSApp*
 PROCESS-NAME,onedrive
 PROCESS-NAME,onedriveupdater
