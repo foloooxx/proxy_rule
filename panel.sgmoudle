@@ -25,8 +25,6 @@ NetflixSelect = script-name=NetflixSelect, update-interval=3600
 #策略组面板 可重复配置 注意修改相应字段
 groupPanel= script-name=groupPanel,update-interval=5
 
-nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=1
-
 [Script]
 #附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
 SurgePro_ReloadProfile = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js ,argument=icon=crown.fill&color=#f6c970
@@ -45,8 +43,6 @@ Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 #应该修改的字段 YouTubeGroup
 YouTubeController = type=generic, script-path=https://raw.githubusercontent.com/fishingworld/something/main/YouTubeSelect/youtubecontroller.js, argument=icon1=play.rectangle.on.rectangle.circle&color1=#55ba94&icon2=xmark.shield&color2=#AF52DE&YouTubeGroup=Youtube,timeout=3600
 YouTubeChecker = type=cron,cronexp=10 0-23/4 * * *,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/YouTubeSelect/youtubechecker.js,script-update-interval=86400,control-api=1
-#捷径执行
-YouTubeShortcut = type=cron,cronexp=5 0 31 1 2000,wake-system=0,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/YouTubeSelect/youtubeshortcut.js,script-update-interval=86400,control-api=1
 
 #disney+策略组控制
 #应当修改的字段 disneyGroup Disney+的策略组名称
@@ -63,8 +59,3 @@ NetflixChecker = type=cron,cronexp=5 4 * * *,wake-system=1,timeout=3600,script-p
 #策略组面板 可重复配置 注意修改相应字段
 #必须更改的字段：group 填写需要显示的策略组名称
 groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=Auto
-
-nf_check = type=generic, script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js?version=1633090677159, argument=title=Netflix 解锁检测
-
-[Host]
-ip-api.com = 208.95.112.1
