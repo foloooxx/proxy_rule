@@ -17,7 +17,7 @@ Sub_info = script-name=Sub_info,update-interval = 43200
 YouTubeController = script-name=YouTubeController, update-interval=600
 
 #Netflix策略组自动控制
-NetflixChecker = script-name=NetflixSelect, update-interval=3600
+NetflixChecker = script-name=NetflixChecker, update-interval=3600
 
 #策略组面板 可重复配置 注意修改相应字段
 groupPanel= script-name=groupPanel,update-interval=5
